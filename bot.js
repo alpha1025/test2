@@ -18,12 +18,9 @@ console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client
 
 client.on('message', message => {
      if (receivedMessage.author == client.user) {
-        return
-     }
-     elseif(message.content !='ping') {
-    	message.reply('i am bot');
-  	}
-    
+        return }
+    else{        message.reply('i am bot);
+                               }
 });
 
 
