@@ -24,10 +24,9 @@ client.on('message', (receivedMessage) => {
     receivedMessage.channel.send({embed: {
   color: 3447003,
   description: "I am bot!"
-    timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: " Alpha Pvt Limited"
+      text: " Bot by alpha"
 }})
 })
 
