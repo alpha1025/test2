@@ -13,13 +13,18 @@ client.on('ready', () => {
     });
 });
 
+
+
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
     if (receivedMessage.author == client.user) {
         return
     }
 
-    receivedMessage.channel.send("I am bot ")
+    receivedMessage.channel.send({embed: {
+  color: 3447003,
+  description: "I, bot very simple Embed!"
+}})
 })
 
 // THIS  MUST  BE  THIS  WAY
