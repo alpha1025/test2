@@ -3,9 +3,14 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: 'idle' })
-    .then(console.log)
-    .catch(console.error);
+    client.user.setStatus('online')
+    client.user.setPresence({
+        game: {
+            name: 'Use f!help',
+            type: "Playing",
+            url: "https://discordapp.com/"
+        }
+    });
 });
 
 client.on('message', message => {
