@@ -4,14 +4,9 @@ const client = new Discord.Client();
 client.on('ready', () => {
 console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
     client.user.setStatus('online')
-    client.user.setPresence({
-        game: {
-            name: 'Alpha play GTA V',
-            type: "WATCHING",
-            url: "https://discordapp.com/"
-        }
-    });
-});
+    client.user.setPresence({ game: { name: 'ALPHA' , type: 'WATCHING' }, status: 'idle' })
+    .then(console.log)
+    .catch(console.error);
 
 client.on('message', message => {
     if (message.content === 'ping') {
