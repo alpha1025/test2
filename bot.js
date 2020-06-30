@@ -6,8 +6,8 @@ console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client
     client.user.setStatus('online')
     client.user.setPresence({
         game: {
-            name: 'Grand Theft Auto V mods',
-            type: "Playing",
+            name: 'Alpha play GTA V',
+            type: "Wacthing",
             url: "https://discordapp.com/"
         }
     });
