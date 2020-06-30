@@ -7,7 +7,7 @@ console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client
     client.user.setPresence({
         game: {
             name: 'Alpha play GTA V',
-            type: "Wacthing",
+            type: "Watching",
             url: "https://discordapp.com/"
         }
     });
