@@ -21,9 +21,7 @@ client.on('message', (receivedMessage) => {
     receivedMessage.channel.send(
     {embed: {
   color: 3447003,
-  description: " iam bot !"
-  thumbnail: {
-  url: 'https://i.imgur.com/wSTFkRM.png',
+  description: " i am bot !"
 }})
 })
 // THIS  MUST  BE  THIS  WAY
