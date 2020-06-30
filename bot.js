@@ -14,14 +14,13 @@ client.on('ready', () => {
 });
 
 client.on('message', (receivedMessage) => {
-     if (receivedMessage.author == client.user) {
-        return 
-     }
-      else if(message.content != 'ping') {
-          receivedMessage.channel.send("i am bot")
-      }
-  
-});
+    // Prevent bot from responding to its own messages
+    if (receivedMessage.author == client.user) {
+        return
+    }
+
+    receivedMessage.channel.send("I am bot ")
+})
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
