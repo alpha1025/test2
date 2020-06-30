@@ -1,15 +1,28 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 client.on('ready', () => {
 console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
-    client.user.setStatus('Idle')
+    client.user.setStatus('online')
+    
+    client.user.setPresence({
+        game: {
+            name: ' Grand Theft Auto V',
+            type: "Playing",
+            url: "https://discordapp.com/"
+        }
+    });
+});
     
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+     if (receivedMessage.author == client.user) {
+        return
+    elseif(message.content !='ping') {
+    	message.reply('i am bot');
   	}
+    
 });
 
 
