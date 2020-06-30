@@ -21,7 +21,8 @@ client.on('message', (receivedMessage) => {
     receivedMessage.channel.send(
     {embed: {
   color: 3447003,
-  description: "A very simple Embed!"
+  description: "Hi 
+         i am bot !"
 }})
 })
 // THIS  MUST  BE  THIS  WAY
