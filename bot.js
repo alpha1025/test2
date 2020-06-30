@@ -3,9 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
-    client.user.setStatus('online')
-    client.user.setPresence({ game: { name: 'ALPHA' , type: 'WATCHING' }, status: 'idle' })
-
+    client.user.setStatus('Idle')
+    
 
 client.on('message', message => {
     if (message.content === 'ping') {
