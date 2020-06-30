@@ -3,7 +3,9 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity("GTA V",{type:"Playing"})
+    client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: 'idle' })
+    .then(console.log)
+    .catch(console.error);
 });
 
 client.on('message', message => {
