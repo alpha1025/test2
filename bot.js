@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!');
-    client.user.setStatus('online')
+    console.log('Delpoyed Succesfully!');
+    client.user.setStatus('idle')
     client.user.setPresence({
         game: {
-            name: 'Use f!help',
+            name: 'Grand theft auto V',
             type: "Playing",
             url: "https://discordapp.com/"
         }
