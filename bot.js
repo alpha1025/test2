@@ -21,6 +21,6 @@ client.on('message', (receivedMessage) => {
     receivedMessage.channel.send(embed: {
   color: 3447003,
   description: ("I am bot")
-})
+}))
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
