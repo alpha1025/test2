@@ -18,11 +18,11 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    receivedMessage.channel.send(embed:
-         {
-        color: 3447003,
-        description: ("I am bot")
-      })
+    receivedMessage.channel.send(
+    {embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+}})
 })
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
