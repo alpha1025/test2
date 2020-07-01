@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
     client.user.setStatus('online')
-    client.user.setActivity('Gta V', { type: 'WATCHING' });
+    client.user.setPresence('Gta V', { type: 'WATCHING' });
     
 });
 client.on('message', (receivedMessage) => {
