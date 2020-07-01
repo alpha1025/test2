@@ -16,13 +16,12 @@ client.on('ready', () => {
     generalChannel.send({embed:{
         color: 43127
         ,description: "Bot is ready"}})
-  
-    client.user.setPresence({
-       
-            name: 'GTA V',
-            type: "Watching",
+    client.user.status("online")
+    client.user.setPresence({ 'GTA v',
+      
+            type: "Watching"
           
-        , status: "online"
+       
     });
    
     
