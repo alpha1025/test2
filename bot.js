@@ -16,8 +16,8 @@ client.on('ready', () => {
         ,description: "Bot is ready" ,
     timestamp: new Date(),
 	footer: {
-		text: 'Some footer text here',
-		icon_url: 'https://i.imgur.com/wSTFkRM.png',
+		text: 'Developed by Alpha',
+		icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
 	},
     }})
   
