@@ -3,12 +3,22 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
+    console.log("Servers:")
+    client.guilds.forEach((guild) => {
+        console.log(" - " + guild.name)
+
+        // List all channels
+        guild.channels.forEach((channel) => {
+            console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`)
+        })
+    })
   
-     client.user.setPresence({
+    client.user.setPresence({
         game: {
             name: 'GTA V',
             type: "Playing",
-        }, status: 'online'
+            url: "https://discordapp.com/"
+        }, status: "dnd"
     });
    
     
