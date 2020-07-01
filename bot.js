@@ -6,8 +6,8 @@ client.on('ready', () => {
     client.user.setStatus('online')
     client.user.setPresence({
         game: {
-            name: 'Grand theft auto V',
-            type: "Playing",
+            name: 'Gta V',
+            type: "Watching",
             url: "https://discordapp.com/"
         }
     });
