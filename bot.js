@@ -21,7 +21,7 @@ client.on('ready', () => {
         game: {
             name: 'GTA V',
             type: "Watching",
-            url: "https://www.youtube.com/watch?v=EFtTTCbGwYY"
+          
         }, status: "online"
     });
    
