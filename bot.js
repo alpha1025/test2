@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
-   / client.user.setStatus('idle')
+  
     
     client.user.setPresence({ game: { name: 'GTA V' , type: 'WATCHING' }, status: 'idle' })
     
