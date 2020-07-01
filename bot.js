@@ -3,8 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
-    client.user.setStatus('idle')
-    client.user.setStatus('undercover')
+    client.user.setStatus('online')
     client.user.setPresence({
         game: {
             name: 'Grand theft auto V',
