@@ -3,8 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
-    client.user.setStatus('online')
-    client.user.setPresence('Gta V', { type: 'WATCHING' });
+    client.user.setStatus('idle')
+    client.user.setPresence('Gta V');
     
 });
 client.on('message', (receivedMessage) => {
