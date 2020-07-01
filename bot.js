@@ -4,13 +4,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
     client.user.setStatus('online')
-    client.user.setPresence({
-        game: {
-            name: 'Gta V',
-            type: "watching",
-            url: "https://discordapp.com/"
-        }
-    });
+    client.user.setActivity('Gta V', { type: 'WATCHING' });
+    
 });
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
