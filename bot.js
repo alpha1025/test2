@@ -13,14 +13,16 @@ client.on('ready', () => {
         })
     })
     var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
-    generalChannel.send("Bot is ready")  
+    generalChannel.send({embed:{
+        color: 3DFF33
+        ,description: "Bot is ready"}})
   
     client.user.setPresence({
         game: {
             name: 'GTA V',
-            type: "Playing",
+            type: "Watching",
             url: "https://discordapp.com/"
-        }, status: "dnd"
+        }, status: "online"
     });
    
     
