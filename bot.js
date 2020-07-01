@@ -14,7 +14,7 @@ client.on('ready', () => {
     })
     var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
-        color: 3DFF33
+        color: 43127
         ,description: "Bot is ready"}})
   
     client.user.setPresence({
