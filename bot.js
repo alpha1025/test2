@@ -12,6 +12,8 @@ client.on('ready', () => {
             console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`)
         })
     })
+    var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
+    generalChannel.send("Bot is ready")  
   
     client.user.setPresence({
         game: {
