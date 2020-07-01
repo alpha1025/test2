@@ -15,7 +15,13 @@ client.on('ready', () => {
         color: 43127
         ,description: "Bot is ready"}})
   
-    client.user.setPresence("alpha");
+   client.user.setPresence({
+        game: {
+            name: 'GTA V',
+            type: "Watching",
+            url: "https://www.youtube.com/watch?v=EFtTTCbGwYY"
+        }, status: "online"
+    });
 
     
     
@@ -33,3 +39,6 @@ client.on('message', (receivedMessage) => {
 })
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+
+
