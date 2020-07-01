@@ -14,9 +14,9 @@ client.on('ready', () => {
     generalChannel.send({embed:{
         color: 43127
         ,description: "Bot is ready" ,
-    timestamp: new Date(),
+    
 	footer: {
-		
+		timestamp: new Date(),
 		icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
 	},
     }})
