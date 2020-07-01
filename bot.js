@@ -15,7 +15,7 @@ client.on('ready', () => {
         color: 43127
         ,description: "Bot is ready"}})
   
-    client.user.setPresence("GTA V");
+    client.user.setPresence("alpha");
 
     
     
