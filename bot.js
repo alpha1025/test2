@@ -26,25 +26,28 @@ client.on('ready', () => {
   
    client.user.setPresence({
         game: {
-            name: 'GTA V',
+            name: 'LoveDarsh🛐',
             type: "Watching",
             url: "https://www.youtube.com/"
         }, status: "online"
     });
 
-    
-    
+   
 });
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
     if (receivedMessage.author == client.user) {
         return
     }
-    receivedMessage.channel.send(
-    {embed: {
+	    
+if (message.content === 'hi') {
+	// send back "Pong." to the channel the message was sent in
+	message.channel.send('{embed: {
   color: 3447003,
-  description: " i am bot !"
-}})
+  description: " Hi,i am bot !"
+}}.');
+} 
+
 })
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
