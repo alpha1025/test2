@@ -1,12 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
 client.on('ready', () => {
     console.log('Delpoyed Succesfully!');
     console.log("Servers:")
     client.guilds.forEach((guild) => {
         console.log(" - " + guild.name)
-
         // List all channels
         guild.channels.forEach((channel) => {
             console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`)
@@ -16,14 +14,15 @@ client.on('ready', () => {
     generalChannel.send({embed:{
         color: 43127
         ,description: "Bot is ready"}})
-    client.user.status("online")
-    client.user.setPresence({ 'GTA v',
-      
-            type: "Watching"
-          
-       
+  
+    client.user.setPresence({
+        game: {
+            name: 'GTA V',
+            type: "Watching",
+            url: "https://www.youtube.com/watch?v=EFtTTCbGwYY"
+        }, status: "online"
     });
-   
+
     
     
 });
