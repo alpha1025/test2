@@ -16,7 +16,7 @@ client.on('ready', () => {
         ,description: "Bot is ready" ,
     timestamp: new Date(),
 	footer: {
-		text: 'Developed by Alpha',
+		
 		icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
 	},
     }})
@@ -25,7 +25,7 @@ client.on('ready', () => {
         game: {
             name: 'GTA V',
             type: "Watching",
-            url: "https://www.youtube.com/watch?v=EFtTTCbGwYY"
+            url: "https://www.youtube.com/"
         }, status: "online"
     });
 
