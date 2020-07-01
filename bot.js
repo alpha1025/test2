@@ -13,7 +13,13 @@ client.on('ready', () => {
     var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
         color: 43127
-        ,description: "Bot is ready"}})
+        ,description: "Bot is ready" ,
+    timestamp: new Date(),
+	footer: {
+		text: 'Some footer text here',
+		icon_url: 'https://i.imgur.com/wSTFkRM.png',
+	},
+    }})
   
    client.user.setPresence({
         game: {
