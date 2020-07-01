@@ -18,11 +18,11 @@ client.on('ready', () => {
         ,description: "Bot is ready"}})
   
     client.user.setPresence({
-        game: {
+       
             name: 'GTA V',
             type: "Watching",
           
-        }, status: "online"
+        , status: "online"
     });
    
     
