@@ -15,13 +15,7 @@ client.on('ready', () => {
         color: 43127
         ,description: "Bot is ready"}})
   
-    client.user.setPresence({
-        game: {
-            name: 'GTA V',
-            type: "Watching",
-            url: "https://www.youtube.com/watch?v=EFtTTCbGwYY"
-        }, status: "online"
-    });
+    client.user.setPresence("GTA V");
 
     
     
