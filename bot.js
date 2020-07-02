@@ -23,14 +23,8 @@ client.on('ready', () => {
 		
 	},
     }})
+   client.user.setActivity("with JavaScript",{type:"WATCHING"})
   
-   client.user.setPresence({
-        game: {
-            name: 'LoveDarsh🛐',
-            type: "Watching",
-            url: "https://www.youtube.com/"
-        }, status: "online"
-    });
 
    
 });
