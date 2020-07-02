@@ -41,11 +41,12 @@ client.on('message', (receivedMessage) => {
 
 if (message.content === 'hi') {
 	// send back "Pong." to the channel the message was sent in
+
 	message.channel.send({embed: {
   color: 3447003,
   description: " Hi,i am bot !"
-}});
 
+}});
 } 
 
 })
