@@ -23,7 +23,9 @@ client.on('ready', () => {
 		
 	},
     }})
-   client.user.setActivity("with JavaScript",{type:"WATCHING"})
+   client.user.setActivity('discord.js', { type: 'WATCHING' })
+  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+  .catch(console.error);
   
 
    
