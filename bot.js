@@ -45,7 +45,7 @@ if (message.content === 'hi') {
   color: 3447003,
   description: " Hi,i am bot !"
 }});
-}});
+
 } 
 
 })
