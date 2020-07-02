@@ -23,15 +23,14 @@ client.on('ready', () => {
 		
 	},
     }})
-   client.user.setPresence({
-        game: { 
-            name: 'LoveDarsh😍',
-            type: 'WATCHING'
-        },
-        status: 'idle'
-    })
   
-
+   client.user.setPresence({
+        game: {
+            name: 'LoveDarsh😍🛐',
+            type: "Watching",
+            url: "https://www.youtube.com/"
+        }, status: "online"
+    });
    
 });
 client.on('message', (receivedMessage) => {
@@ -39,18 +38,17 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-	    
+
 if (message.content === 'hi') {
 	// send back "Pong." to the channel the message was sent in
+	message.channel.send('{embed: {
 	message.channel.send({embed: {
   color: 3447003,
   description: " Hi,i am bot !"
+}}.');
 }});
 } 
 
 })
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-
-
-
