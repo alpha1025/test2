@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
-    console.log('Delpoyed Succesfully!');
+    console.log('DEploymn Succesfully!');
     console.log("Servers:")
     client.guilds.forEach((guild) => {
         console.log(" - " + guild.name)
@@ -13,13 +13,14 @@ client.on('ready', () => {
     var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
         color: 43127
-        ,description: "Bot is ready" ,
+        ,description: "Bot is online" ,
 	 timestamp: new Date(),
 
 	footer: {
-		text: 'Developed by Alpha',
+		text: 'Deployed at',
 		icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
 		timestamp: new Date(),
+		text: "by alpha",
 
 	},
     }})
