@@ -8,8 +8,14 @@ client.on('ready', () => {
       description:"Revised   ",
        timestamp: new Date()
     }})
-    client.user.setActivity("under development", {type:"WATCHING"})
-    console.log("bot is online")
+    client.user.setPresence({
+        game: {
+            name: "Surprise"
+            type: "Watching",
+            url: "https://www.youtube.com/"
+        }, status: "online"
+    });
+    console.log("bot is deployed ")
   })
 
 client.on('message', (receivedMessage) => {
