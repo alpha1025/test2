@@ -13,13 +13,14 @@ client.on('ready', () => {
     var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
         color: 43127
-        ,description: "Bot is ready" ,
+        ,description: "Bot is deployed " ,
 	 timestamp: new Date(),
     
 	footer: {
-		text: 'Developed by Alpha',
+		text: 'Deployed at ',
 		icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
 		timestamp: new Date(),
+		text: "by alpha",
 		
 	},
     }})
@@ -33,20 +34,8 @@ client.on('ready', () => {
     });
    
 });
-client.on('message', (receivedMessage) => {
-    // Prevent bot from responding to its own messages
-    if (receivedMessage.author == client.user) {
-        return
-    }
 
-if (message.content === 'hi') {
-	// send back "Pong." to the channel the message was sent in
 
-	message.channel.send({embed: {
-  color: 3447003,
-  description: " Hi,i am bot !"
-
-}});
 } 
 
 })
