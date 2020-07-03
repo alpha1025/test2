@@ -10,7 +10,7 @@ client.on('ready', () => {
     }})
     client.user.setPresence({
         game: {
-            name: "Surprise"
+            name: "Surprise" ,
             type: "Watching",
             url: "https://www.youtube.com/"
         }, status: "online"
