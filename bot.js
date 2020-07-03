@@ -36,7 +36,7 @@ client.on('ready', () => {
 });
 
 
-} 
+
 
 })
 // THIS  MUST  BE  THIS  WAY
