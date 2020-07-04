@@ -9,6 +9,7 @@ client.on('ready', () => {
     }})
     client.user.setPresence({
         game: {
+ 
             name: "Surprise" ,
             type: "Watching",
             url: "https://www.youtube.com/"
@@ -48,3 +49,52 @@ function processCommand(receivedMessage) {
           description:"bruh!!! where is the command??😅"
         }})
         receivedMessage.react("🛐")
+        receivedMessage.channel.send({embed:{
+          color: 3066993,
+          description:"try ^commands 😁"
+        }})
+    }
+}
+function helpCommand(arguments, receivedMessage) {
+    if (arguments.length > 0) {
+        receivedMessage.channel.send({embed:{
+        color: 1752220
+        ,description: "Help is currently limited" ,
+	       timestamp: new Date(),
+        icon_url: 'https://i.imgur.com/TV9NcbJ.jpg',
+ //
+    }})
+    } else {
+        receivedMessage.channel.send({embed:{
+          color:12745742,
+          description: " jk🤣. help is still in development",
+        }})
+    }
+}
+function commandsCommand(arguments,receivedMessage){
+  receivedMessage.channel.send({embed:{
+    color:15844367,
+    title:"List of Commands",
+    description: " ^help for help \n ^fun for fun\n ^command for list of commands\n \n and more coming soon",
+  }})
+}
+function funCommand(arguments,receivedMessage){
+  receivedMessage.channel.send({embed:{
+    color:12370112,
+    title:"Thanks for trying",
+    description: "This service will resume soon"
+  }})
+}
+function multiplyCommand(arguments, receivedMessage) {
+    if (arguments.length < 2) {
+        receivedMessage.channel.send("Not enough values to multiply. Try `!multiply 2 4 10` or `!multiply 5.2 7`")
+        return
+    }
+    let product = 1
+    arguments.forEach((value) => {
+        product = product * parseFloat(value)
+    })
+    receivedMessage.channel.send("The product of " + arguments + " multiplied together is: " + product.toString())
+}
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
