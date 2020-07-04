@@ -2,21 +2,31 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 client.on('ready', () => {
-    var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
+    var generalChannel = client.channels.cache.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
       color:1752220 ,
       description:"Revised   ",
        timestamp: new Date()
     }})
-    client.user.setPresence({
-        game: {
-            name: "Surprise" ,
-            type: "Watching",
-            url: "https://www.youtube.com/"
-        }, status: "online"
-    });
-    console.log("bot is deployed ")
+    client.user.setActivity("under development", {type:"WATCHING"})
+    console.log("bot is online")
   })
+
+
+
+
+  client.on('message', (receivedMessage) => {
+      // Prevent bot from responding to its own messages
+      if (receivedMessage.author == client.user) {
+          return
+      }
+
+
+  })
+
+
+
+
 
 client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) { // Prevent bot from responding to its own messages
@@ -49,14 +59,18 @@ function processCommand(receivedMessage) {
       funCommand(arguments,receivedMessage)
     }
      else {
+         receivedMessage.author.toString()
         receivedMessage.channel.send({embed:{
           color: 15158332,
           description:"bruh!!! where is the command??😅"
         }})
         receivedMessage.react("🛐")
+
         receivedMessage.channel.send({embed:{
           color: 3066993,
-          description:"try ^commands 😁"
+          description:"try ^commands 😁",
+
+
         }})
     }
 }
@@ -110,6 +124,4 @@ function multiplyCommand(arguments, receivedMessage) {
     })
     receivedMessage.channel.send("The product of " + arguments + " multiplied together is: " + product.toString())
 }
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login('NzEwMjg5MTE2MTQ2ODI3MzE2.Xv0mkA.5VULf1h3rVePauw4UdCeHrZxjYg') // Replace XXXXX with your bot token
