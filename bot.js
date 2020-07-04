@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 client.on('ready', () => {
-    var generalChannel = client.channels.cache.get("727732332253151242") // Replace with known channel ID
+    var generalChannel = client.channels.get("727732332253151242") // Replace with known channel ID
     generalChannel.send({embed:{
       color:1752220 ,
       description:"Revised   ",
