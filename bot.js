@@ -12,7 +12,7 @@ client.on('ready', () => {
  
             name: "Surprise" ,
             type: "Watching",
-            url: "https://www.youtube.com/"
+            url: "https://www.youtube.com/channel/UCZhl9QYua-g5Jg0xk_E30ew/videos?view_as=subscriber"
         }, status: "online"
     });
     console.log("bot is deployed ")
@@ -44,14 +44,11 @@ function processCommand(receivedMessage) {
       funCommand(arguments,receivedMessage)
     }
      else {
-        receivedMessage.channel.send({embed:{
-          color: 15158332,
-          description:"bruh!!! where is the command??😅"
-        }})
+        
         receivedMessage.react("🛐")
         receivedMessage.channel.send({embed:{
           color: 3066993,
-          description:"try ^commands 😁"
+          description:" Wrong command \n try ^commands for list of comands😁"
         }})
     }
 }
